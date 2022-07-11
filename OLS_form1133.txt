@@ -1,0 +1,35 @@
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                   rpns   R-squared:                       1.000
+Model:                            OLS   Adj. R-squared:                  1.000
+Method:                 Least Squares   F-statistic:                 3.568e+31
+Date:                Sun, 10 Jul 2022   Prob (F-statistic):               0.00
+Time:                        19:01:50   Log-Likelihood:                 4151.0
+No. Observations:                 151   AIC:                            -8290.
+Df Residuals:                     145   BIC:                            -8272.
+Df Model:                           6
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+sigma          4.0000   4.08e-16   9.81e+15      0.000       4.000       4.000
+sigma_n/2     -8.0000   1.68e-15  -4.75e+15      0.000      -8.000      -8.000
+sigma_n/3    -12.0000   2.16e-15  -5.56e+15      0.000     -12.000     -12.000
+sigma_n/4     16.0000   3.45e-15   4.64e+15      0.000      16.000      16.000
+sigma_n/6     24.0000   8.79e-15   2.73e+15      0.000      24.000      24.000
+sigma_n/12   -48.0000   1.75e-14  -2.75e+15      0.000     -48.000     -48.000
+==============================================================================
+Omnibus:                       12.109   Durbin-Watson:                   0.279
+Prob(Omnibus):                  0.002   Jarque-Bera (JB):               13.510
+Skew:                          -0.725   Prob(JB):                      0.00117
+Kurtosis:                       2.786   Cond. No.                         130.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly
+ specified.
+F-statistic: 35675705184443796555348410630144.000,  p-value: 0.00000
+ln(L) =  inf
+C:\Users\Visitor\pydata-book\lin_reg_form1133.py:38: RuntimeWarning: overflow en
+countered in double_scalars
+  L = (1.0 / np.sqrt(2*np.pi*s2)) ** N * np.exp(-SSR/(s2*2.0) )
